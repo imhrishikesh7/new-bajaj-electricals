@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaRegEnvelope } from "react-icons/fa";
 
 const ContactSidebar = () => {
   const [hoveredIcon, setHoveredIcon] = useState(null);
 
   const icons = [
     { id: "whatsapp", text: "Chat on WhatsApp", icon: <FaWhatsapp />, bgColor: "bg-green-500" },
-    { id: "email", text: "Send an Email", icon: <FaEnvelope />, bgColor: "bg-blue-500" },
+    { id: "email", text: "Send an Email", icon: <FaRegEnvelope />, bgColor: "bg-blue-500" },
   ];
 
   return (
