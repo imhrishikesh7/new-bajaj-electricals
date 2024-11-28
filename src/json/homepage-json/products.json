@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Arioso Luxe BLDC",
+      "description": "Aesthetic design & energy efficiency for the ultimate lifestyle upgrade",
+      "price": "$100",
+      "features": ["Feature A", "Feature B"],
+      "img": "./home/products/prod1.png",
+      "addedDate": "2024-11-28"
+    },
+    {
+      "id": 2,
+      "title": "Eurostos 1200mm",
+      "description": "Aerodynamically designed blades & Pointed Tip Airfoil - Low Air Cutting Noise",
+      "price": "$200",
+      "features": ["Feature C", "Feature D"],
+      "img": "./home/products/prod2.png",
+      "addedDate": "2024-11-26"
+    },
+    {
+      "id": 3,
+      "title": "Novella BLDC 1200mm",
+      "description": "Aerodynamically designed blades & Pointed Tip Airfoil - Low Air Cutting Noise",
+      "price": "$150",
+      "features": ["Feature E", "Feature F"],
+      "img": "./home/products/prod3.png",
+      "addedDate": "2024-11-24"
+    },
+    {
+      "id": 4,
+      "title": "Energos 26",
+      "description": "erodynamically designed blades & Pointed Tip Airfoil - Low Air Cutting Noise",
+      "price": "$300",
+      "features": ["Feature G", "Feature H"],
+      "img": "./home/products/prod4.png",
+      "addedDate": "2024-11-22"
+    },
+    {
+      "id": 5,
+      "title": "Product 5",
+      "description": "erodynamically designed blades & Pointed Tip Airfoil - Low Air Cutting Noise",
+      "price": "$300",
+      "features": ["Feature I", "Feature J"],
+      "img": "./home/products/prod2.png",
+      "addedDate": "2024-11-18"
+    },
+    {
+      "id": 6,
+      "title": "Product 6",
+      "description": "erodynamically designed blades & Pointed Tip Airfoil - Low Air Cutting Noise",
+      "price": "$300",
+      "features": ["Feature K", "Feature L"],
+      "img": "./home/products/prod1.png",
+      "addedDate": "2024-11-16"
+    }
+  ]
+  
