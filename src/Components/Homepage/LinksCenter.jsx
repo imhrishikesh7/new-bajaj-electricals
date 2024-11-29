@@ -58,7 +58,7 @@ const LinksCenter = () => {
                                 zIndex: hoveredCard === card.id ? 0 : 10, // Title disappears when hovered
                                 opacity: hoveredCard === card.id ? 0 : 1, // Fades out the title on hover
                             }}
-                        >
+                        > 
                             {card.title}
                         </motion.h3>
 

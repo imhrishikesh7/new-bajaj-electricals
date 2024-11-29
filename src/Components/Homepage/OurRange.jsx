@@ -135,7 +135,7 @@ const OurRange = () => {
                                 <p className="text-white text-lg font-semibold">Know More</p>
                             </div>
                         </div>
-                        <div className="group rounded-2xl cursor-pointer relative w-[390px] h-full md:mt-4 mt-4 md:absolute md:h-[150px] md:right-[59%]">
+                        <div className="group rounded-2xl cursor-pointer relative md:w-[390px] h-full md:mt-4 mt-4 md:absolute md:h-[150px] md:right-[59%]">
                             <motion.img
                                 custom={5}
                                 variants={staggerEffect}
