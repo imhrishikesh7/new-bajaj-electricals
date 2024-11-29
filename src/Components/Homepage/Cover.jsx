@@ -35,11 +35,11 @@ const Cover = ({ dataSource }) => {
   };
 
   return (
-    <div className="carousel-container md:h-[80vh]">
+    <div className="carousel-container">
       <Slider {...settings}>
         {slides.map((slide) => (
-          <div key={slide.id} className="slide">
-            <img src={slide.img} className="w-full" alt= "" />
+          <div key={slide.id} className="slide h-fit">
+            <img src={slide.img} className="w-auto" alt= "" />
             {/* <img src="./home/Banner.png" alt="" /> */}
           </div>
         ))}

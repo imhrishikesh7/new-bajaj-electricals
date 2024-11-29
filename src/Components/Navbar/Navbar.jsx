@@ -9,6 +9,7 @@ const Navbar = () => {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileBrandsOpen, setIsMobileBrandsOpen] = useState(false); // New state for mobile "Our Brands" dropdown
+  const [isMobileConOpen, setIsMobileConOpen] = useState(false); // New state for mobile "Our Brands" dropdown
 
   const handleMenuClick = (menu) => {
     setActiveMenuItem((prev) => (prev === menu ? null : menu));
@@ -24,7 +25,7 @@ const Navbar = () => {
       setLastScrollY(window.scrollY);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
@@ -51,29 +52,31 @@ const Navbar = () => {
         transition={{ duration: 0.3 }}
         className="sticky top-0 left-0 w-full bg-white shadow-md z-50"
       >
-        <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-          <a className="w-[120px] font-bold text-gray-800"><img className="" src="./global-assets/bel-logo.svg" alt="" /></a>
+        <div className="container mx-auto px-4 py-2 flex items-center justify-between">
+          <a className="md:w-[8vw] w-28 font-bold text-gray-800"><img className="" src="./global-assets/bel-logo.svg" alt="" /></a>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-8 text-gray-800 font-medium">
-            {["Corporate", "Our Brands", "Customer Care", "Store Locator"].map((menu) => (
+          <ul className="hidden md:flex gap-4 text-gray-800 text-base max-1300px:text-[14px] font-medium">
+            {["Corporate", "Our Brands", "Consumer Care", "Store Locator"].map((menu, index) => (
               <li
                 key={menu}
-                className={`relative group ${activeMenuItem === menu ? "bg-blue-200" : ""
-                  }`}
+                className={`relative group ${activeMenuItem === menu ? "bg-blue-200" : ""}`}
                 onClick={() => handleMenuClick(menu)}
                 onMouseEnter={() => handleMouseEnter(menu)}
                 onMouseLeave={handleMouseLeave}
               >
                 <span
-                  className={`cursor-pointer px-4 py-2 rounded-md transition ${activeMenuItem === menu
-                      ? "bg-blue-500 text-white"
-                      : "hover:bg-blue-100"
+                  className={`cursor-pointer px-4 py-2 rounded-md transition ${activeMenuItem === menu ? "bg-blue-500 text-white" : "hover:bg-blue-100"
                     }`}
                 >
                   {menu}
+                  {/* Conditionally render the icon for the second menu item */}
+                  {(index === 1 || index === 2) && 
+                   <i className="fas fa-chevron-down ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
+                  }
                 </span>
 
+                {/* Dropdown menu logic */}
                 {menu === "Our Brands" && activeDropdown === "Our Brands" && (
                   <AnimatePresence>
                     <motion.ul
@@ -82,24 +85,29 @@ const Navbar = () => {
                       exit={{ opacity: 0, y: -10 }}
                       className="absolute left-0 top-full w-[200px] bg-white shadow-lg mt-2 py-2 rounded-md z-10"
                     >
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                        Bajaj Appliances
-                      </li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                        Bajaj Lighting
-                      </li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                        Nex
-                      </li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                        Morphy Richards
-                      </li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                        Nirlep
-                      </li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-                        Professional Lighting
-                      </li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Bajaj Appliances</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Bajaj Lighting</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Nex</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Morphy Richards</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Nirlep</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Professional Lighting</li>
+                    </motion.ul>
+                  </AnimatePresence>
+                )}
+                  {menu === "Consumer Care" && activeDropdown === "Consumer Care" && (
+                  <AnimatePresence>
+                    <motion.ul
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -10 }}
+                      className="absolute left-0 top-full w-[200px] bg-white shadow-lg mt-2 py-2 rounded-md z-10"
+                    >
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Service Request Form</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Service and Support</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Be Our Service Centre</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Register Your Product</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Fix It Yourself</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Partner Login</li>
                     </motion.ul>
                   </AnimatePresence>
                 )}
@@ -107,8 +115,9 @@ const Navbar = () => {
             ))}
           </ul>
 
+
           <div className="hidden md:block">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
+            <button className="bg-blue-500 text-white  px-4 py-2 max-1300px:text-[12px] rounded-full hover:bg-blue-600 transition">
               Shop Now
             </button>
           </div>
@@ -182,13 +191,41 @@ const Navbar = () => {
                       )}
                     </AnimatePresence>
                   </li>
-                  <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Customer Care</li>
+                  {/* <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Customer Care</li> */}
+                  <li>
+                    <div
+                      className="cursor-pointer flex justify-between items-center"
+                      onClick={() => setIsMobileConOpen((prev) => !prev)}
+                    >
+                      <span className="border-l-2 border-[#035dac] pl-2">Consumer Care</span>
+                      <span>{isMobileConOpen ? "▲" : "▼"}</span>
+                    </div>
+                    <AnimatePresence>
+                      {isMobileConOpen && (
+                        <motion.ul
+                          initial={{ height: 0, opacity: 0 }}
+                          animate={{ height: "auto", opacity: 1 }}
+                          exit={{ height: 0, opacity: 0 }}
+                          className="ml-4 mt-2 flex flex-col gap-2 border-l-2 border-[#035dac] pl-2 text-gray-600"
+                        >
+                          <li className="cursor-pointer">Bajaj Appliances</li>
+                          <li className="cursor-pointer">Bajaj Lighting</li>
+                          <li className="cursor-pointer">Nex</li>
+                          <li className="cursor-pointer">Morphy Richards</li>
+                          <li className="cursor-pointer">Nirlep</li>
+                          <li className="cursor-pointer">
+                            Professional Lighting
+                          </li>
+                        </motion.ul>
+                      )}
+                    </AnimatePresence>
+                  </li>
                   <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Store Locator</li>
                   <li>
-                            <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
-                              Shop Now
-                            </button>
-                          </li>
+                    <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
+                      Shop Now
+                    </button>
+                  </li>
                 </ul>
               </div>
             </motion.div>

@@ -16,14 +16,14 @@ const Bestsellers = () => {
     }, []);
 
     return (
-        <div className="marginal !mt-[10%]">
+        <div className="marginal !mt-[7%]">
             <Title title1="Our" title2="Bestsellers" />
 
-            <div className="py-6">
+            <div className="">
                 {/* Tabs - Dropdown for small screens */}
-                <div className="mb-8">
+                <div className="mb-4">
                     {/* For larger screens, display tabs as buttons */}
-                    <div className="hidden md:flex  space-x-4 mb-8">
+                    <div className="hidden md:flex  space-x-2 mb">
                         {tabs.map((tab) => (
                             <button
                                 key={tab}
@@ -77,7 +77,7 @@ const Bestsellers = () => {
                             {products[activeTab]?.slice(0, 2).map((product) => (
                                 <div
                                     key={product.id}
-                                    className="group relative overflow-hidden bg-white rounded-2xl shadow-lg flex-grow"
+                                    className="group relative overflow-hidden  bg-white rounded-2xl shadow-lg flex-grow"
                                 >
                                     {/* Wrapper div for background image */}
                                     <div
@@ -106,12 +106,12 @@ const Bestsellers = () => {
                         </div>
 
                         {/* Right Column - 1 card covering same height as 2 left cards */}
-                        <div className="bg-white overflow-hidden md:h-[450px] rounded-2xl shadow-lg w-full sm:w-1/2 md:w-[49%] flex flex-col group">
+                        <div className="bg-white overflow-hidden md:h-[370px] rounded-2xl shadow-lg w-full sm:w-1/2 md:w-[49%] flex flex-col group">
                             {products[activeTab]?.[2] && (
                                 <div className="relative flex-grow overflow-hidden">
                                     {/* Background image wrapper */}
                                     <div
-                                        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-110"
+                                        className="absolute inset-0  bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-110"
                                         style={{
                                             backgroundImage: `url(${products[activeTab][2].imageUrl})`,
                                         }}

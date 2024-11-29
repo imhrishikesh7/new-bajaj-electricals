@@ -19,10 +19,10 @@ const OurRange = () => {
                 title2="Our Range"
                 desc="Bajaj Electricals excels in consumer appliances and lighting solutions. Their business portfolio includes a wide range of innovative products loved by consumers across India."
             />
-            <div className="w-full max-w-[1300px] mx-auto">
+            <div className="w-full max-w-[1000px] mx-auto">
                 <div className="w-full md:flex md:justify-center relative my-4">
                     <div
-                        className="group cursor-pointer rounded-2xl md:w-[32%] relative md:mr-4">
+                        className="group cursor-pointer rounded-2xl md:w-[320px] md:h-[150px] relative md:mr-4">
                         <motion.img
                             custom={0}
                             variants={staggerEffect}
@@ -42,17 +42,17 @@ const OurRange = () => {
                         }}
                             viewport={{ once: true }}
                             src="./home/rect1.svg"
-                            className="elements absolute -left-24 bottom-0 hidden sm:block"
+                            className="elements w-[50px] absolute -left-16 bottom-0 hidden sm:block"
                             alt=""
                         />
 
                     </div>
 
                     <div
-                        className="rounded-2xl md:w-[250px]"
+                        className="rounded-2xl md:w-[180px] relative "
 
                     >
-                        <div className="group rounded-2xl cursor-pointer relative md:top-12 md:mt-0 mt-4">
+                        <div className="group rounded-2xl cursor-pointer relative  md:top-6 md:mt-0 mt-4">
                             <motion.img
                                 custom={1}
                                 variants={staggerEffect}
@@ -72,15 +72,15 @@ const OurRange = () => {
                         }}
                             viewport={{ once: true }}
                             src="./home/rect2.svg" 
-                            className="elements absolute -right-[30%] bottom-0 hidden sm:block" 
+                            className="elements w-[45px] absolute -right-14 bottom-0 hidden sm:block" 
                             alt="" />
                         </div>
                     </div>
                 </div>
 
-                <div className="w-full md:flex md:justify-center relative mt-4">
+                <div className="w-full md:flex  md:justify-center relative mt-4">
                     <div
-                        className="group cursor-pointer relative rounded-2xl md:w-[31%] md:mr-4"
+                        className="group cursor-pointer  relative rounded-2xl md:w-[310px] md:mr-4"
 
                     >
                         <motion.img
@@ -99,7 +99,7 @@ const OurRange = () => {
                     </div>
 
                     <div
-                        className="group rounded-2xl cursor-pointer relative rounded-2xl md:w-[20%] md:h-60 md:mr-4"
+                        className="group rounded-2xl cursor-pointer relative rounded-2xl md:w-[210px] md:h-[170px] md:mr-4"
 
                     >
                         <motion.img
@@ -120,7 +120,7 @@ const OurRange = () => {
                     <div
                         className="rounded-2xl relative"
                     >
-                        <div className="group rounded-2xl cursor-pointer relative md:mt-10 mt-4 h-[53%]">
+                        <div className="group rounded-2xl cursor-pointer relative md:mt-4 md:w-[400px] mt-4 ">
                             <motion.img
                                 custom={4}
                                 variants={staggerEffect}
@@ -135,7 +135,7 @@ const OurRange = () => {
                                 <p className="text-white text-lg font-semibold">Know More</p>
                             </div>
                         </div>
-                        <div className="group rounded-2xl cursor-pointer relative w-full h-full md:mt-4 mt-4 md:absolute md:h-[54%] md:right-[53%]">
+                        <div className="group rounded-2xl cursor-pointer relative w-[390px] h-full md:mt-4 mt-4 md:absolute md:h-[150px] md:right-[59%]">
                             <motion.img
                                 custom={5}
                                 variants={staggerEffect}
@@ -155,7 +155,7 @@ const OurRange = () => {
                           }}
                               viewport={{ once: true }} 
                             src="./home/rect3.svg" 
-                            className="elements absolute -right-24 top-0 hidden sm:block" 
+                            className="elements w-[65px] absolute -right-20 top-0 hidden sm:block" 
                             alt="" />
                         </div>
                     </div>

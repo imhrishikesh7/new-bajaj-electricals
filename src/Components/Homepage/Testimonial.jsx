@@ -77,7 +77,7 @@ const Testimonial = () => {
   return (
     <div className='marginal'>
       <Title title1="Loved by" title2="Millions of Consumers" />
-      <div className="w-full max-w-screen-xl mx-auto py-12 md:px-6">
+      <div className="w-full max-w-screen-xl mx-auto py-2 md:px-6">
         <Slider {...settings} >
           {testimonials.map((testimonial) => (
             <div className='w-full pt-4 pl-2'>
@@ -85,32 +85,32 @@ const Testimonial = () => {
               key={testimonial.id}
               className="px-4" // Add spacing between cards
             >
-              <div className="relative p-6 bg-[#F2F2F2] rounded-xl shadow-lg">
+              <div className="relative p-6 bg-[#F2F2F2] rounded-2xl shadow-lg">
                 {/* Circle Image */}
-                <div className="absolute -top-5 -left-6 border-5 border-white w-32 h-32 rounded-full shadow-lg">
-                  <img
+                {/* <div className="absolute -top-5 -left-6 border-5 border-white w-32 h-32 rounded-full shadow-lg"> */}
+                  {/* <img
                     src={testimonial.image}
                     alt={testimonial.name}
                     className="w-full h-full object-cover rounded-full"
-                  />
-                  <img src="./home/quote.svg" className='absolute top-4 -right-7 w-14' alt="" />
-                </div>
+                  /> */}
+                  <img src="./home/quote.svg" className='absolute top-2 right-2 w-14' alt="" />
+                {/* </div> */}
 
                 {/* Testimonial Content */}
-                <div className="pt-8">
+                <div className="pt-2">
                   {/* Name with Blue Gradient Background */}
-                  <h3 className="text-lg font-semibold text-right bg-gradient-to-r from-blue-500 to-blue-900 text-white w-fit ml-auto py-1 px-4 rounded-full rounded-bl-none">
+                  <h3 className="text-base font-semibold text-right bg-gradient-to-r from-blue-500 to-blue-900 text-white w-fit py-1 px-4 rounded-full rounded-bl-none">
                     {testimonial.name}
                   </h3>
 
                   {/* Company Name */}
-                  <p className="text-gray-500 text-sm text-right mt-1 w-fit ml-auto">{testimonial.company}</p>
+                  <p className="text-gray-500 text-sm text-right mt-1 w-fit ">{testimonial.company}</p>
 
                   {/* Remark */}
-                  <p className="italic text-2xl font-semibold mt-4">{testimonial.remark}</p>
+                  <p className="italic text-2xl font-semibold mt-2">{testimonial.remark}</p>
 
                   {/* Message */}
-                  <p className="text-gray-700 text-[14px] mt-4">{testimonial.message}</p>
+                  <p className="text-gray-700 text-[14px] mt-2">{testimonial.message}</p>
 
                   {/* Rating Stars */}
                   <div className="mt-4">

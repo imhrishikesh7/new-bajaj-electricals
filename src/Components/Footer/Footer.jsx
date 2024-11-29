@@ -14,51 +14,57 @@ const Footer = () => {
                 <div className="flex flex-wrap ">
                     <div className="lg:w-1/4 w-full mx-auto md:mx-0 mb-6">
                         <div className="single_footer m-auto w-fit">
-                            <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Services</h4>
+                            <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Our Brands</h4>
                             <ul className="space-y-2 text-[14px]">
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Lorem Ipsum</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Simply dummy text</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">The printing and typesetting</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Standard dummy text</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Type specimen book</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Bajaj Appliances</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Bajaj Lighting</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Nex</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Morphy Richards</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Nirlep</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Professional Lighting</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="lg:w-1/4 w-full mx-auto md:mx-0 mb-6">
                         <div className="single_footer single_footer_address m-auto w-fit">
-                            <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Page Link</h4>
+                            <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Consumer Care</h4>
                             <ul className="space-y-2 text-[14px]">
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Lorem Ipsum</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Simply dummy text</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">The printing and typesetting</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Standard dummy text</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Type specimen book</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Service Request Form</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Service and Support</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Be Our Service Centre</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Register Your Product</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Fix It Yourself</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Partner Login</a></li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="lg:w-1/4 w-full mx-auto md:mx-0 mb-6">
                         <div className="single_footer m-auto w-fit">
-                            <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Services</h4>
+                            <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Corporate </h4>
                             <ul className="space-y-2 text-[14px]">
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Lorem Ipsum</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Simply dummy text</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">The printing and typesetting</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Standard dummy text</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Type specimen book</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">About Us</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Our Businesses</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Careers</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">CSR</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">ESG</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Investors</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Media</a></li>
                             </ul>
                         </div>
                     </div>
                     <div className="lg:w-1/4 w-full mx-auto md:mx-0 mb-6">
                         <div className="single_footer m-auto w-fit">
-                            <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Services</h4>
+                            <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Contact Us</h4>
                             <ul className="space-y-2 text-[14px]">
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Lorem Ipsum</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Simply dummy text</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">The printing and typesetting</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Standard dummy text</a></li>
-                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Type specimen book</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Bajaj Offices</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Store Locator</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Consumer Care</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Partners Login</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">RBP</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Unify</a></li>
+                                <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Any other business app?</a></li>
                             </ul>
                         </div>
                     </div>

@@ -70,11 +70,11 @@ const WhatsNew = () => {
                   alt={product.title}
                   className="w-full h-48 object-cover rounded-t-lg"
                 />
-                <div className="px-3 py-4 bg-[#f6f6f6]">
+                <div className="px-3 py-4 bg-[#f6f6f6] h-[120px]">
                   <h3 className="text-lg font-semibold text-[#478EE2]">
                     {product.title}
                   </h3>
-                  <p className="text-[14px] text-gray-600 mt-2">
+                  <p className="max-1300px:text-[12px] text-[14px] text-gray-600 mt-2">
                     {product.description}
                   </p>
                 </div>
