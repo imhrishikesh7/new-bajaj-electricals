@@ -25,7 +25,7 @@ const Title = ({ title1 , title2 , desc }) => {
               {title2}
             </motion.h1>
         </div>
-        <div className='md:w-auto'>
+        <div className='md:w-[60%]'>
         <motion.p 
         className='md:text-[16px]'
         initial={{ x: 70, opacity: 0 }}

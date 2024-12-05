@@ -8,6 +8,7 @@ import Innovations from '../Components/Homepage/Innovations';
 import Testimonial from '../Components/Homepage/Testimonial';
 import LinksCenter from '../Components/Homepage/LinksCenter';
 import ContactSidebar from '../Components/Homepage/ContactSidebar';
+import GoToTopButton from '../Components/Homepage/GoToTopButton';
 
 const Home = () => {
   return (
@@ -37,7 +38,10 @@ const Home = () => {
       />
       <Testimonial/>
       <LinksCenter/>
+      <div className='hidden sm:block'>
+      <GoToTopButton/>
 
+      </div>
     </div>
   )
 }

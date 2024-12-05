@@ -85,7 +85,7 @@ const Testimonial = () => {
               key={testimonial.id}
               className="px-4" // Add spacing between cards
             >
-              <div className="relative p-6 bg-[#F2F2F2] rounded-2xl shadow-lg">
+              <div className="relative p-6 bg-[#F2F2F2]  rounded-2xl shadow-lg">
                 {/* Circle Image */}
                 {/* <div className="absolute -top-5 -left-6 border-5 border-white w-32 h-32 rounded-full shadow-lg"> */}
                   {/* <img

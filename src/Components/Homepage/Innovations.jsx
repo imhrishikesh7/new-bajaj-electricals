@@ -24,7 +24,7 @@ const Innovations = ({ videos }) => {
                             boxShadow: "0 0 15px 5px rgba(0, 123, 255, 0.7)", // Blue box shadow
                         }}
                             key={index}
-                            className={`relative rounded-2xl overflow-hidden cursor-pointer w-full sm:w-[31%] transition-transform duration-300
+                            className={`relative rounded-2xl w-full overflow-hidden cursor-pointer w-full sm:w-[31%] transition-transform duration-300
                               ${index === 1 ? "transform md:scale-110" : ""}
                               ${index === 0 || index === 2 ? "h-[270px]" : "md:h-[290px]"}`} // Adjust height for the first and third thumbnails
                             onClick={() => handleCardClick(video.videoSrc)}
@@ -76,7 +76,7 @@ const Innovations = ({ videos }) => {
                             src={selectedVideo}
                             controls
                             autoPlay
-                            className="max-w-[90%] max-h-[90%] rounded-lg"
+                            className="max-w-[98%] max-h-[95%] rounded-lg"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.5 }}
