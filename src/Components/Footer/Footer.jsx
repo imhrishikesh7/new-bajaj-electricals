@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="container mx-auto ">
                 <div className="flex flex-wrap ">
                     <div className="lg:w-1/4 w-full mx-auto md:mx-0 mb-6">
-                        <div className="single_footer m-auto w-fit">
+                        <div className="single_footer m-auto md:w-fit w-[60%]">
                             <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Our Brands</h4>
                             <ul className="space-y-2 text-[14px]">
                                 <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Bajaj Appliances</a></li>
@@ -27,7 +27,7 @@ const Footer = () => {
                     </div>
 
                     <div className="lg:w-1/4 w-full mx-auto md:mx-0 mb-6">
-                        <div className="single_footer single_footer_address m-auto w-fit">
+                        <div className="single_footer single_footer_address m-auto md:w-fit w-[60%]">
                             <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Consumer Care</h4>
                             <ul className="space-y-2 text-[14px]">
                                 <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Service Request Form</a></li>
@@ -41,7 +41,7 @@ const Footer = () => {
                     </div>
 
                     <div className="lg:w-1/4 w-full mx-auto md:mx-0 mb-6">
-                        <div className="single_footer m-auto w-fit">
+                        <div className="single_footer m-auto md:w-fit w-[60%]">
                             <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Corporate </h4>
                             <ul className="space-y-2 text-[14px]">
                                 <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">About Us</a></li>
@@ -55,7 +55,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="lg:w-1/4 w-full mx-auto md:mx-0 mb-6">
-                        <div className="single_footer m-auto w-fit">
+                        <div className="single_footer m-auto md:w-fit w-[60%]">
                             <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Contact Us</h4>
                             <ul className="space-y-2 text-[14px]">
                                 <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Bajaj Offices</a></li>

@@ -48,7 +48,7 @@ const Bestsellers = () => {
                             <i className="fas fa-chevron-down ml-2"></i>
                         </button>
                         {isDropdownOpen && (
-                            <div className="absolute mt-2 bg-white shadow-lg rounded-lg w-full max-w-[200px]">
+                            <div className="absolute z-20 mt-2 bg-white shadow-lg rounded-lg w-full max-w-[200px]">
                                 {tabs.map((tab) => (
                                     <button
                                         key={tab}
