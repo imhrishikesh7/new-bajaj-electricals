@@ -57,11 +57,17 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-4 text-gray-800 text-base max-1300px:text-[14px] font-medium">
-            {["Corporate", "Our Brands", "Consumer Care", "Store Locator"].map((menu, index) => (
+            {["Home","Corporate", "Our Brands", "Consumer Care"].map((menu, index) => (
               <li
                 key={menu}
                 className={`relative group ${activeMenuItem === menu ? "bg-blue-200" : ""}`}
-                onClick={() => handleMenuClick(menu)}
+                onClick={() => {
+                  if (menu === "Corporate") {
+                    window.open("https://www.bajajelectricals.com/", "_blank");// Replace with your specific link
+                  } else {
+                    handleMenuClick(menu);
+                  }
+                }}
                 onMouseEnter={() => handleMouseEnter(menu)}
                 onMouseLeave={handleMouseLeave}
               >
@@ -71,7 +77,7 @@ const Navbar = () => {
                 >
                   {menu}
                   {/* Conditionally render the icon for the second menu item */}
-                  {(index === 1 || index === 2) && 
+                  {(index === 2 || index === 3) && 
                    <i className="fas fa-chevron-down ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
                   }
                 </span>
@@ -162,6 +168,7 @@ const Navbar = () => {
                   Close
                 </div>
                 <ul className="flex flex-col gap-4 text-gray-800 font-medium">
+                  <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Home</li>
                   <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Corporate</li>
                   <li>
                     <div
@@ -220,7 +227,7 @@ const Navbar = () => {
                       )}
                     </AnimatePresence>
                   </li>
-                  <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Store Locator</li>
+                  {/* <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Store Locator</li> */}
                   <li>
                     <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
                       Shop Now

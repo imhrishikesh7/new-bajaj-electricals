@@ -5,8 +5,8 @@ const ContactSidebar = () => {
   const [hoveredIcon, setHoveredIcon] = useState(null);
 
   const icons = [
-    { id: "whatsapp", text: "Chat on WhatsApp", icon: <FaWhatsapp />, bgColor: "bg-green-500" },
-    { id: "email", text: "Send an Email", icon: <FaRegEnvelope />, bgColor: "bg-blue-500" },
+    { id: "whatsapp", text: "+917039920000", icon: <FaWhatsapp />, bgColor: "bg-green-500" },
+    { id: "email", text: "consumercare@bajajelectricals.com", icon: <FaRegEnvelope />, bgColor: "bg-blue-500" },
   ];
 
   return (
@@ -21,17 +21,24 @@ const ContactSidebar = () => {
           onMouseEnter={() => setHoveredIcon(id)}
           onMouseLeave={() => setHoveredIcon(null)}
           style={{
-            width: hoveredIcon === id ? "200px" : "50px", // Control the strip width
+            width: hoveredIcon === id ? (id === "whatsapp" ? "200px" : "270px") : "50px",
             height: "40px",
           }}
         >
           {/* Text on the left side */}
           <span
-            className={`absolute left-2 text-sm whitespace-nowrap transition-opacity duration-300 ${
+            className={`absolute left-2 text-[12px] whitespace-nowrap transition-opacity duration-300 ${
               hoveredIcon === id ? "opacity-100" : "opacity-0"
             }`}
           >
-            {text}
+            <a
+              href={id === "whatsapp" ? `https://wa.me/${text.replace("+", "")}` : `mailto:${text}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white"
+            >
+              {text}
+            </a>
           </span>
 
           {/* Icon on the right side */}
@@ -39,7 +46,7 @@ const ContactSidebar = () => {
             className="absolute right-3 rounded-full text-2xl"
             style={{
               transition: "transform 0.3s ease",
-              transform: hoveredIcon === id ? "translateX(0)" : "translateX(0)",
+              transform: hoveredIcon === id ? "translateX(-10px)" : "translateX(0)",
             }}
           >
             {icon}
