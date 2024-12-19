@@ -57,10 +57,10 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-4 text-gray-800 text-base max-1300px:text-[14px] font-medium">
-            {["Home","Corporate", "Our Brands", "Consumer Care"].map((menu, index) => (
+            {["Our Brands","Consumer Care", "Corporate" ].map((menu, index) => (
               <li
                 key={menu}
-                className={`relative group ${activeMenuItem === menu ? "bg-blue-200" : ""}`}
+                className={`relative group ${activeMenuItem === menu ? "" : ""}`}
                 onClick={() => {
                   if (menu === "Corporate") {
                     window.open("https://www.bajajelectricals.com/", "_blank");// Replace with your specific link
@@ -72,14 +72,14 @@ const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <span
-                  className={`cursor-pointer px-4 py-2 rounded-md transition ${activeMenuItem === menu ? "bg-blue-500 text-white" : "hover:bg-blue-100"
+                  className={`cursor-pointer px-4 py-2 rounded-md transition ${activeMenuItem === menu ? "" : "hover:bg-blue-100"
                     }`}
                 >
                   {menu}
                   {/* Conditionally render the icon for the second menu item */}
-                  {(index === 2 || index === 3) && 
+                  {/* {(index === 2 || index === 3) && 
                    <i className="fas fa-chevron-down ml-2 transition-transform duration-300 group-hover:rotate-180"></i>
-                  }
+                  } */}
                 </span>
 
                 {/* Dropdown menu logic */}
@@ -89,14 +89,14 @@ const Navbar = () => {
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
-                      className="absolute left-0 top-full w-[200px] bg-white shadow-lg mt-2 py-2 rounded-md z-10"
+                      className="absolute left-0 top-full w-[250px] bg-white shadow-lg mt-2 py-2 rounded-md z-10"
                     >
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Bajaj Appliances</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Bajaj Lighting</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Nex</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Morphy Richards</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Nirlep</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Professional Lighting</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://shop.bajajelectricals.com/">Bajaj Appliances</a></li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a terget='_blank' href="https://www.bajajelectricals.com/home-essentials-appliances/lighting/">Bajaj Lighting</a></li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://nexlife.in/">Nex</a></li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://morphyrichardsindia.com/">Morphy Richards</a></li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://www.nirlep.com/">Nirlep</a></li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://illumination.bajajelectricals.com/">Professional Lighting</a></li>
                     </motion.ul>
                   </AnimatePresence>
                 )}
@@ -108,12 +108,10 @@ const Navbar = () => {
                       exit={{ opacity: 0, y: -10 }}
                       className="absolute left-0 top-full w-[200px] bg-white shadow-lg mt-2 py-2 rounded-md z-10"
                     >
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Service Request Form</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Service and Support</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Be Our Service Centre</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Register Your Product</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Fix It Yourself</li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">Partner Login</li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://shop.bajajelectricals.com/pages/service-request-form">Service Request Form</a></li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://www.bajajelectricals.com/service-and-support/">Service and Support</a></li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://shop.bajajelectricals.com/pages/register-your-product">Register Your Product</a></li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://www.bajajelectricals.com/fix-it-yourself/">Fix It Yourself</a></li>
                     </motion.ul>
                   </AnimatePresence>
                 )}

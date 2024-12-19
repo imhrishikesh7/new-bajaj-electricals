@@ -44,11 +44,11 @@ const Footer = () => {
                             <h4 className="text-white text-lg font-bold uppercase mb-6 border-b border-white pb-4">Corporate </h4>
                             <ul className="space-y-2 text-[14px]">
                                 <li><a href="https://www.bajajelectricals.com/about-us/" target='_blank' className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">About Us</a></li>
-                                <li><a href="https://www.bajajelectricals.com/investors-updates/" target='_blank' className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Our Businesses</a></li>
+                                <li><a href="#" target='_blank' className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Our Businesses</a></li>
                                 <li><a href="https://www.bajajelectricals.com/careers/" target='_blank' className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Careers</a></li>
                                 <li><a href="https://www.bajajelectricals.com/csr/" target='_blank' className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">CSR</a></li>
                                 <li><a href="#" className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">ESG</a></li>
-                                <li><a href="#" target='_blank' className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Investors</a></li>
+                                <li><a href="https://www.bajajelectricals.com/investors-updates/" target='_blank' className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Investors</a></li>
                                 <li><a href="#" target='_blank' className="text-gray-200 transition duration-300 ease-in-out hover:text-[#ff3666]">Media</a></li>
                             </ul>
                         </div>
