@@ -13,7 +13,7 @@ export default {
         'custom-hover': '0 10px 25px rgba(0, 0, 0, 0.2), 0 -5px 15px rgba(0, 0, 0, 0.1)', // On hover, deeper shadows
       },
       screens: {
-        'max-1300px': { max: '1400px' }, // Matches screens smaller than or equal to 122px
+        'max-1300px': { max: '1560px' }, // Matches screens smaller than or equal to 122px
       },
     },
   },

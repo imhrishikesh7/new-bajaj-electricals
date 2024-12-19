@@ -37,7 +37,7 @@ const Home = () => {
         ]}
       />
       <Testimonial/>
-      <LinksCenter/>
+      {/* <LinksCenter/> */}
       <div className='hidden sm:block'>
       <GoToTopButton/>
 

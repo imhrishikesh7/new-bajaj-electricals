@@ -69,7 +69,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="md:flex justify-evenly items-center border-t-[0.1px] border-white w-full pt-7">
+                <div className="md:flex justify-evenly items-center border-t-[0.1px] border-gray-300 w-[90%] m-auto pt-7">
                     <p className="copyright text-white text-sm text-center">
                         Copyright © {new Date().getFullYear()}{" "}
                         <a href="#" className="text-[#01c7e9] hover:text-[#ff3666]">

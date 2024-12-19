@@ -8,7 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 // Custom Arrow Components
 const CustomPrevArrow = ({ onClick }) => {
   return (
-    <div className="custom-arrow custom-prev" onClick={onClick}>
+    <div className="custom-arrow2 custom-prev" onClick={onClick}>
       &#8249;
     </div>
   );
@@ -16,7 +16,7 @@ const CustomPrevArrow = ({ onClick }) => {
 
 const CustomNextArrow = ({ onClick }) => {
   return (
-    <div className="custom-arrow custom-next" onClick={onClick}>
+    <div className="custom-arrow2 custom-next" onClick={onClick}>
       &#8250;
     </div>
   );
@@ -53,13 +53,16 @@ const WhatsNew = () => {
   };
 
   return (
+    <div className="bg-gradient-to-r from-blue-500 to-blue-900 py-1">
     <div className="marginal">
-      <Title title1="Here’s" title2="What’s New" />
+      <div className="text-white">
+      <Title title1="Here’s" title3="What’s New" />
+      </div>
       <div className="max-w-screen-xl mx-auto py-8">
         <Slider {...settings}>
           {sortedProducts.map((product, index) => (
             <div key={product.id} className="p-3">
-              <div className="relative bg-white rounded-lg shadow-custom hover:shadow-custom-hover transition-shadow duration-300">
+              <div className="relative bg-white  rounded-xl overflow-hidden shadow-custom hover:shadow-custom-hover transition-shadow duration-300">
                 {index < 2 && (
                   <div className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">
                     New
@@ -68,13 +71,13 @@ const WhatsNew = () => {
                 <img
                   src={product.img}
                   alt={product.title}
-                  className="w-full h-48 object-cover rounded-t-lg"
+                  className="w-[95%] mx-auto h-48 object-contain "
                 />
-                <div className="px-3 py-4 bg-[#f6f6f6] h-[120px]">
+                <div className="px-6 py-4 bg-[#f6f6f6] h-[110px]">
                   <h3 className="text-lg font-semibold text-[#478EE2]">
                     {product.title}
                   </h3>
-                  <p className="max-1300px:text-[12px] text-[14px] text-gray-600 mt-2">
+                  <p className="max-1300px:text-[12px] text-[16px] text-gray-600 mt-2">
                     {product.description}
                   </p>
                 </div>
@@ -83,6 +86,7 @@ const WhatsNew = () => {
           ))}
         </Slider>
       </div>
+    </div>
     </div>
   );
 };
