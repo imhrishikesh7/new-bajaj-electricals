@@ -53,7 +53,7 @@ const Navbar = () => {
         className="sticky top-0 left-0 w-full bg-white shadow-md z-50"
       >
         <div className="container mx-auto px-4 py-2 flex items-center justify-between">
-          <a className="md:w-[8vw] w-28 font-bold text-gray-800"><img className="" src="./global-assets/bel-logo.svg" alt="" /></a>
+          <a href="/" className="md:w-[8vw] w-28 font-bold text-gray-800"><img className="" src="./global-assets/bel-logo.svg" alt="" /></a>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex gap-4 text-gray-800 text-base max-1300px:text-[14px] font-medium">
@@ -92,7 +92,7 @@ const Navbar = () => {
                       className="absolute left-0 top-full w-[250px] bg-white shadow-lg mt-2 py-2 rounded-md z-10"
                     >
                       <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://shop.bajajelectricals.com/">Bajaj Appliances</a></li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a terget='_blank' href="https://www.bajajelectricals.com/home-essentials-appliances/lighting/">Bajaj Lighting</a></li>
+                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://www.bajajelectricals.com/home-essentials-appliances/lighting/">Bajaj Lighting</a></li>
                       <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://nexlife.in/">Nex</a></li>
                       <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://morphyrichardsindia.com/">Morphy Richards</a></li>
                       <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://www.nirlep.com/">Nirlep</a></li>

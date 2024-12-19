@@ -105,7 +105,7 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li class="icon-content">
-                                <a href="hhttps://www.facebook.com/BajajElectricals/" target='_blank' aria-label="facebook" data-social="facebook">
+                                <a href="https://www.facebook.com/BajajElectricals/" target='_blank' aria-label="facebook" data-social="facebook">
                                     <div class="filled"></div>
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
