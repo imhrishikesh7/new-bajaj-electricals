@@ -121,9 +121,9 @@ const Navbar = () => {
 
 
           <div className="hidden md:block">
-            <button className="bg-blue-500 text-white  px-4 py-2 max-1300px:text-[12px] rounded-full hover:bg-blue-600 transition">
+            <a target="_blank" href="https://www.amazon.in/stores/BajajElectricals/BajajElectricals/page/0F14D851-B8A4-470B-A842-BD3BDE30E4E7" className="bg-blue-500 text-white  px-4 py-2 max-1300px:text-[12px] rounded-full hover:bg-blue-600 transition">
               Shop Now
-            </button>
+            </a>
           </div>
 
           {/* Mobile Hamburger Icon */}

@@ -21,7 +21,8 @@ const Innovations = ({ videos }) => {
                     {videos.map((video, index) => (
                         <motion.div
                         whileHover={{
-                            boxShadow: "0 0 15px 5px rgba(0, 123, 255, 0.7)", // Blue box shadow
+                            boxShadow: "0 0 10px 3px rgba(0, 123, 255, 0.4)"
+                            , // Blue box shadow
                         }}
                             key={index}
                             className={`relative rounded-2xl w-full overflow-hidden cursor-pointer w-full sm:w-[31%] transition-transform duration-300
@@ -32,8 +33,9 @@ const Innovations = ({ videos }) => {
                             <motion.div
                                 className="relative w-full h-full"
                                 whileHover={{
-                                    scale: 1.05, // Slight scale effect on hover for the thumbnail
-                                    boxShadow: "0 0 15px 5px rgba(0, 123, 255, 0.7)", // Blue box shadow
+                                    scale: 1.05 // Slight scale effect on hover for the thumbnail
+                                    // boxShadow: "0 0 10px 3px rgba(0, 123, 255, 0.4)"
+, // Blue box shadow
                                 }}
                             >
                                 <img

@@ -23,16 +23,16 @@ const Home = () => {
       <Innovations
         videos={[
           {
-            videoSrc: "./home/fan-video.mp4",
-            thumbnailSrc: "./home/sddefault.jpg"
+            videoSrc: "./home/youtube_2FgqbdwPRT8_1920x1080_h264.webm",
+            thumbnailSrc: "./home/thumb1.webp"
           },
           {
-            videoSrc: "./home/iron-video.mp4",
-            thumbnailSrc: "./home/sddefault (1).jpg"
+            videoSrc: "./home/youtube_UBiJNhY-4kM_1920x1080_h264.webm",
+            thumbnailSrc: "./home/thumb2.webp"
           },
           {
-            videoSrc: "./home/third-fan-video.mp4",
-            thumbnailSrc: "./home/thumbnail3.png"
+            videoSrc: "./home/youtube_xcFMnkc7ObQ_1920x1080_h264.webm",
+            thumbnailSrc: "./home/thumb3.webp"
           }
         ]}
       />
