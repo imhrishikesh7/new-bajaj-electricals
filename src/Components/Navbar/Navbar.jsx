@@ -50,9 +50,9 @@ const Navbar = () => {
         initial={{ y: -100 }}
         animate={{ y: isVisible ? 0 : -100 }}
         transition={{ duration: 0.3 }}
-        className="sticky top-0 left-0 w-full bg-white shadow-md z-50"
+        className="sticky top-0 left-0  bg-white shadow-md z-50"
       >
-        <div className="container mx-auto px-4 py-2 flex items-center justify-between">
+        <div className="container mx-auto md:w-[90%] mx-auto px-4 py-2 flex items-center justify-between">
           <a href="/" className="md:w-[8vw] w-28 font-bold text-gray-800"><img className="" src="./global-assets/bel-logo.svg" alt="" /></a>
 
           {/* Desktop Menu */}
@@ -72,7 +72,7 @@ const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <span
-                  className={`cursor-pointer px-4 py-2 rounded-md transition ${activeMenuItem === menu ? "" : "hover:bg-blue-100"
+                  className={`cursor-pointer font-semibold px-4 py-2 rounded-md transition ${activeMenuItem === menu ? "" : "hover:bg-blue-100"
                     }`}
                 >
                   {menu}

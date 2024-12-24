@@ -5,8 +5,8 @@ const ContactSidebar = () => {
   const [hoveredIcon, setHoveredIcon] = useState(null);
 
   const icons = [
-    { id: "whatsapp", text: "+917039920000", icon: <FaWhatsapp />, bgColor: "bg-green-500" },
-    { id: "email", text: "consumercare@bajajelectricals.com", icon: <FaRegEnvelope />, bgColor: "bg-blue-500" },
+    { id: "whatsapp", text: "+917039920000", icon: <FaWhatsapp />, bgColor: "bg-gradient-to-r from-blue-500 to-blue-900" },
+    { id: "email", text: "consumercare@bajajelectricals.com", icon: <FaRegEnvelope />, bgColor: "bg-gradient-to-r from-[#03D764] to-[#008D48]" },
   ];
 
   return (

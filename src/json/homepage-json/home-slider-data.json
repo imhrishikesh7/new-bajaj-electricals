@@ -1,19 +1,27 @@
 [
     {
       "id": 1,
-      "img": "./home/Bajaj-Banner-New-1.png"
+      "img": "./home/bajaj corporate website images/CAROUSELS/Bajaj_Carousels_Fan_1920x690 Pxl-04.webp"
     },
     {
       "id": 2,
-      "img": "./home/Bajaj-Banner-New-2.png"
+      "img": "./home/bajaj corporate website images/CAROUSELS/Bajaj_Carousels_rang_1920x690 Pxl-01.webp"
     },
     {
       "id": 3,
-      "img": "./home/Bajaj-Banner-New-1.png"
+      "img": "./home/bajaj corporate website images/CAROUSELS/Bajaj_Carousels_Waterheater_1920x690 Pxl-02.webp"
     },
     {
-      "id": 3,
-      "img": "./home/Bajaj-Banner-New-2.png"
+      "id": 4,
+      "img": "./home/bajaj corporate website images/CAROUSELS/Carousels_Finesse MG_1920x690pxl-06.webp"
+    },
+    {
+      "id": 5,
+      "img": "./home/bajaj corporate website images/CAROUSELS/Carousels_Iron_1920x690pxl-05.webp"
+    },
+    {
+      "id": 6,
+      "img": "./home/bajaj corporate website images/CAROUSELS/Carousels_MG_1920x690px-03.webp"
     }
   ]
   

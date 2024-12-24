@@ -1,12 +1,13 @@
-[
+{
+  "fans": [
     {
       "id": 1,
       "title": "Arioso Luxe BLDC",
       "description": "Aesthetic design & energy efficiency for the ultimate lifestyle upgrade",
       "price": "$100",
       "features": ["Feature A", "Feature B"],
-      "img": "./home/products/prod1.png",
-      "addedDate": "2024-11-28"
+      "img": "./home/bajaj corporate website images/whats-new/Fans/251 x 184 pix-07.webp",
+      "addedDate": "2024-11-24"
     },
     {
       "id": 2,
@@ -14,7 +15,7 @@
       "description": "Aerodynamically designed blades & Pointed Tip Airfoil - Low Air Cutting Noise",
       "price": "$200",
       "features": ["Feature C", "Feature D"],
-      "img": "./home/products/prod2.png",
+      "img": "./home/bajaj corporate website images/whats-new/Fans/251 x 184 pix-08.webp",
       "addedDate": "2024-11-26"
     },
     {
@@ -23,35 +24,66 @@
       "description": "Aerodynamically designed blades & Pointed Tip Airfoil - Low Air Cutting Noise",
       "price": "$150",
       "features": ["Feature E", "Feature F"],
-      "img": "./home/products/prod3.png",
+      "img": "./home/bajaj corporate website images/whats-new/Fans/251 x 184 pix-09.webp",
       "addedDate": "2024-11-24"
+    }
+  ],
+  "mixer-grinders": [
+    {
+      "id": 1,
+      "title": "Mixer Grinder",
+      "description": "Powerful motor & sleek design for efficient blending.",
+      "price": "$80",
+      "features": ["Feature X", "Feature Y"],
+      "img": "./home/bajaj corporate website images/whats-new/MG/251 x 184 pix-04.webp",
+      "addedDate": "2024-11-30"
     },
     {
-      "id": 4,
-      "title": "Energos 26",
-      "description": "erodynamically designed blades & Pointed Tip Airfoil - Low Air Cutting Noise",
-      "price": "$300",
-      "features": ["Feature G", "Feature H"],
-      "img": "./home/products/prod4.png",
-      "addedDate": "2024-11-22"
+      "id": 2,
+      "title": "Mixer Grinder",
+      "description": "Durable design with multiple speed settings for versatile grinding.",
+      "price": "$120",
+      "features": ["Feature Z", "Feature W"],
+      "img": "./home/bajaj corporate website images/whats-new/MG/251 x 184 pix-05.webp",
+      "addedDate": "2024-11-28"
     },
     {
-      "id": 5,
-      "title": "Product 5",
-      "description": "erodynamically designed blades & Pointed Tip Airfoil - Low Air Cutting Noise",
-      "price": "$300",
-      "features": ["Feature I", "Feature J"],
-      "img": "./home/products/prod2.png",
-      "addedDate": "2024-11-18"
+      "id": 2,
+      "title": "Mixer Grinder",
+      "description": "Durable design with multiple speed settings for versatile grinding.",
+      "price": "$120",
+      "features": ["Feature Z", "Feature W"],
+      "img": "./home/bajaj corporate website images/whats-new/MG/251 x 184 pix-06.webp",
+      "addedDate": "2024-11-28"
+    }
+  ],
+  "water-heaters": [
+    {
+      "id": 1,
+      "title": "Water Heater",
+      "description": "Fast heating technology for efficient hot water supply.",
+      "price": "$180",
+      "features": ["Feature M", "Feature N"],
+      "img": "./home/bajaj corporate website images/whats-new/Water Heater/251 x 184 pix-01.webp",
+      "addedDate": "2024-11-25"
     },
     {
-      "id": 6,
-      "title": "Product 6",
-      "description": "erodynamically designed blades & Pointed Tip Airfoil - Low Air Cutting Noise",
-      "price": "$300",
-      "features": ["Feature K", "Feature L"],
-      "img": "./home/products/prod1.png",
-      "addedDate": "2024-11-16"
+      "id": 2,
+      "title": "Water Heater",
+      "description": "Compact design with energy-saving features.",
+      "price": "$250",
+      "features": ["Feature O", "Feature P"],
+      "img": "./home/bajaj corporate website images/whats-new/Water Heater/251 x 184 pix-02.webp",
+      "addedDate": "2024-11-23"
+    },
+    {
+      "id": 3,
+      "title": "Water Heater",
+      "description": "Compact design with energy-saving features.",
+      "price": "$250",
+      "features": ["Feature O", "Feature P"],
+      "img": "./home/bajaj corporate website images/whats-new/Water Heater/251 x 184 pix-03.webp",
+      "addedDate": "2024-11-23"
     }
   ]
-  
+}

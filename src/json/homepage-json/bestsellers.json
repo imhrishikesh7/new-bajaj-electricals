@@ -1,30 +1,25 @@
 {
-    "tabs": ["Fans", "Air Coolers", "Water heaters", "Mixer Grinders", "Lighting"],
+    "tabs": ["Fans", "Irons", "Mixer Grinders", "Water Heaters"],
     "products": {
       "Fans": [
-        { "id": 1, "title": "Glanza", "description": "Description for Product 1A", "imageUrl": "./home/bestsellers/p11.png" },
-        { "id": 2, "title": "Illuminate", "description": "Description for Product 1B", "imageUrl": "./home/bestsellers/p12.png" },
-        { "id": 3, "title": "Elevate", "description": "Description for Product 1C", "imageUrl": "./home/bestsellers/p13.png" }
+        { "id": 1, "title": "", "description": "Description for Product 1A", "imageUrl": "./home/best-sellers/fan/Fans_ariso_526x209pxl_Final.webp" },
+        { "id": 2, "title": "", "description": "Description for Product 1B", "imageUrl": "./home/best-sellers/fan/Fans_classicosleekwood_526x209pxl_Final.webp" },
+        { "id": 3, "title": "", "description": "Description for Product 1C", "imageUrl": "./home/best-sellers/fan/Fans_arisoluxc1_730x442pxl_Final.webp" }
       ],
-      "Air Coolers": [
-        { "id": 4, "title": "Product 2A", "description": "Description for Product 2A" },
-        { "id": 5, "title": "Product 2B", "description": "Description for Product 2B" },
-        { "id": 6, "title": "Product 2C", "description": "Description for Product 2C" }
-      ],
-      "Water heaters": [
-        { "id": 7, "title": "Product 3A", "description": "Description for Product 3A" },
-        { "id": 8, "title": "Product 3B", "description": "Description for Product 3B" },
-        { "id": 9, "title": "Product 3C", "description": "Description for Product 3C" }
+      "Irons": [
+        { "id": 4, "title": "", "description": "Description for Product 1A", "imageUrl": "./home/best-sellers/iron/Iron_DX_526x209pxl_Final.webp" },
+        { "id": 5, "title": "", "description": "Description for Product 1B", "imageUrl": "./home/best-sellers/iron/Iron_MX35N_526x209pxl_Final.webp" },
+        { "id": 6, "title": "", "description": "Description for Product 1C", "imageUrl": "./home/best-sellers/iron/Iron_Speldora_730x442pxl_Final.webp" }
       ],
       "Mixer Grinders": [
-        { "id": 7, "title": "Product 3A", "description": "Description for Product 3A" },
-        { "id": 8, "title": "Product 3B", "description": "Description for Product 3B" },
-        { "id": 9, "title": "Product 3C", "description": "Description for Product 3C" }
+        { "id": 7, "title": "", "description": "Description for Product 3A",  "imageUrl": "./home/best-sellers/mg/MG_Glomoreblack_526x209pxl_Final.webp" },
+        { "id": 8, "title": "", "description": "Description for Product 3B",  "imageUrl": "./home/best-sellers/mg/MG_PowerGrind_526x209pxl_Final.webp" },
+        { "id": 9, "title": "", "description": "Description for Product 3C",  "imageUrl": "./home/best-sellers/mg/MG_Evoque_730x442pxl_Final.webp" }
       ],
-      "Lighting": [
-        { "id": 7, "title": "Product 3A", "description": "Description for Product 3A" },
-        { "id": 8, "title": "Product 3B", "description": "Description for Product 3B" },
-        { "id": 9, "title": "Product 3C", "description": "Description for Product 3C" }
+      "Water Heaters": [
+        { "id": 7, "title": "", "description": "Description for Product 3A",  "imageUrl": "./home/best-sellers/water-heater/Iron_aerono_526x209pxl_Final.webp" },
+        { "id": 8, "title": "", "description": "Description for Product 3B",  "imageUrl": "./home/best-sellers/water-heater/Iron_gracio_526x209pxl_Final.webp" },
+        { "id": 9, "title": "", "description": "Description for Product 3C",  "imageUrl": "./home/best-sellers/water-heater/Iron_panta_730x442pxl_Final.webp" }
       ]
     }
   }

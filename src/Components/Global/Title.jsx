@@ -22,7 +22,7 @@ const Title = ({ title1, title2, title3, desc }) => {
         {/* Conditional Rendering for Title 2 or Title 3 */}
         {title2 && (
           <motion.h1
-            className='md:text-5xl md:pb-4 pb-1 text-4xl font-bold bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text text-transparent'
+            className='md:text-5xl md:pb-4 pb-1 text-4xl font-bold bg-gradient-to-r from-blue-500 to-blue-900 bg-clip-text text-transparent'
             initial={{ x: -70, opacity: 0 }}
             whileInView={{
               x: 0,

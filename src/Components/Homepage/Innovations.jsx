@@ -20,10 +20,10 @@ const Innovations = ({ videos }) => {
                 <div className="flex gap-4 justify-between items-center w-full flex-wrap">
                     {videos.map((video, index) => (
                         <motion.div
-                        whileHover={{
-                            boxShadow: "0 0 10px 3px rgba(0, 123, 255, 0.4)"
-                            , // Blue box shadow
-                        }}
+                            whileHover={{
+                                boxShadow: "0 0 10px 3px rgba(0, 123, 255, 0.4)"
+                                , // Blue box shadow
+                            }}
                             key={index}
                             className={`relative rounded-2xl w-full overflow-hidden cursor-pointer w-full sm:w-[31%] transition-transform duration-300
                               ${index === 1 ? "transform md:scale-110" : ""}
@@ -35,7 +35,7 @@ const Innovations = ({ videos }) => {
                                 whileHover={{
                                     scale: 1.05 // Slight scale effect on hover for the thumbnail
                                     // boxShadow: "0 0 10px 3px rgba(0, 123, 255, 0.4)"
-, // Blue box shadow
+                                    , // Blue box shadow
                                 }}
                             >
                                 <img
@@ -52,7 +52,7 @@ const Innovations = ({ videos }) => {
                                             src="./home/play-btn.png" // Replace with your play button image
                                             alt="Play Button"
                                             className="w-8 h-8 object-contain"
-                                            
+
                                         />
                                     </div>
                                 </div>
@@ -68,12 +68,16 @@ const Innovations = ({ videos }) => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <button
-                            className="absolute top-4 right-4 text-white text-xl"
+                        
+                            <div className="flex-container absolute z-10 !top-4 right-4"
                             onClick={handleCloseVideo}
-                        >
-                            Close
-                        </button>
+                            >
+                                <button className="item-1">
+                                    <span className="inner">
+                                        <span className="label">Close</span>
+                                    </span>
+                                </button>
+                            </div>
                         <motion.video
                             src={selectedVideo}
                             controls
