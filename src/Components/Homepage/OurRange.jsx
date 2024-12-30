@@ -11,7 +11,6 @@ const staggerEffect = {
     }),
 };
 
-
 const animations = {
     img1: {
         initial: { x: -60, y: -60, opacity: 1 }, // Initially visible but positioned off to the left
@@ -74,16 +73,16 @@ const OurRange = () => {
                 <div className="w-full max-w-[1000px] mx-auto">
                     <div className="w-full md:flex md:justify-center relative my-4">
                         <div
-                            className="group cursor-pointer rounded-2xl md:w-[320px] md:h-[150px] relative md:mr-4">
+                            className="group cursor-pointer rounded-2xl md:w-[320px] md:h-[162px] relative md:mr-4">
                             <motion.img
                                 custom={0}
                                 variants={staggerEffect}
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true }}
-                                src="./home/range1.png"
+                                src="./home/bajaj corporate website images/DISCOVER OUR RANGE/Fans_442x224.webp"
                                 alt="Bajaj"
-                                className="w-full h-full object-cover rounded-2xl"
+                                className="w-full h-full object-contain rounded-2xl"
                             />
                             <div className="absolute inset-0 bg-black rounded-2xl bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
                                 <a href="" className="text-white text-lg font-semibold">Know More</a>
@@ -97,21 +96,18 @@ const OurRange = () => {
                                 className="elements w-[50px] absolute -left-16 bottom-0 hidden sm:block"
                                 alt=""
                             />
-
                         </div>
-
                         <div
                             className="rounded-2xl md:w-[180px] relative "
-
                         >
-                            <div className="group rounded-2xl cursor-pointer relative  md:top-6 md:mt-0 mt-4">
+                            <div className="group rounded-2xl cursor-pointer relative  md:top-10 md:mt-0 mt-4">
                                 <motion.img
                                     custom={1}
                                     variants={staggerEffect}
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true }}
-                                    src="./home/range2.png"
+                                    src="./home/bajaj corporate website images/DISCOVER OUR RANGE/Our-Range_Air-Cooler_Banner_-308-x-238-Pxl.webp"
                                     alt="Morphy Richards"
                                     className="w-full md:w-auto h-full object-cover rounded-2xl"
                                 />
@@ -120,13 +116,12 @@ const OurRange = () => {
                                 </div>
                                 <motion.img
                                     // initial={{ y: -100, opacity: 0 }}
-                                  
                                     viewport={{ once: true }}
                                     initial="initial"
                                     animate={isHovered ? "visible" : "initial"} // Changes on parent hover
                                     variants={animations.img2}
                                     src="./home/rect2.svg"
-                                    className="elements w-[45px] absolute -right-14 bottom-0 hidden sm:block"
+                                    className="elements w-[45px] absolute -right-16 bottom-0 hidden sm:block"
                                     alt="" />
                             </div>
                         </div>
@@ -135,7 +130,6 @@ const OurRange = () => {
                     <div className="w-full md:flex  md:justify-center relative mt-4">
                         <div
                             className="group cursor-pointer  relative rounded-2xl md:w-[310px] md:mr-4"
-
                         >
                             <motion.img
                                 custom={2}
@@ -143,7 +137,7 @@ const OurRange = () => {
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true }}
-                                src="./home/range3.png"
+                                src="./home/bajaj corporate website images/DISCOVER OUR RANGE/PL banner 1[100][15].webp"
                                 alt="Bajaj"
                                 className="w-full h-full object-cover rounded-2xl"
                             />
@@ -151,10 +145,8 @@ const OurRange = () => {
                                 <p className="text-white text-lg font-semibold">Know More</p>
                             </div>
                         </div>
-
                         <div
                             className="group rounded-2xl cursor-pointer relative rounded-2xl md:w-[210px] md:h-[170px] md:mr-4"
-
                         >
                             <motion.img
                                 custom={3}
@@ -162,7 +154,7 @@ const OurRange = () => {
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true }}
-                                src="./home/range4.png"
+                                src="./home/bajaj corporate website images/DISCOVER OUR RANGE/MG_Banners-02.webp"
                                 alt="Morphy Richards"
                                 className="w-full h-full object-cover rounded-2xl md:mt-0 mt-4"
                             />
@@ -170,7 +162,6 @@ const OurRange = () => {
                                 <p className="text-white text-lg font-semibold">Know More</p>
                             </div>
                         </div>
-
                         <div
                             className="rounded-2xl relative"
                         >
@@ -181,7 +172,7 @@ const OurRange = () => {
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true }}
-                                    src="./home/range5.png"
+                                    src="./home/bajaj corporate website images/DISCOVER OUR RANGE/WH_516x196.webp"
                                     alt="Nirlep"
                                     className="md:w-fit h-full w-full object-cover rounded-2xl"
                                 />
@@ -196,7 +187,7 @@ const OurRange = () => {
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true }}
-                                    src="./home/range6.png"
+                                    src="./home/bajaj corporate website images/DISCOVER OUR RANGE/Discover-the-range_507x200.webp"
                                     alt="Nex Fan"
                                     className="object-cover rounded-2xl w-full h-full"
                                 />
