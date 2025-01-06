@@ -80,7 +80,7 @@ const OurRange = () => {
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true }}
-                                src="./home/bajaj corporate website images/DISCOVER OUR RANGE/Fans_442x224.webp"
+                                src="./home/bajaj corporate website images/DISCOVER OUR RANGE/Fans_442x224_New.jpg"
                                 alt="Bajaj"
                                 className="w-full h-full object-contain rounded-2xl"
                             />
@@ -107,7 +107,7 @@ const OurRange = () => {
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true }}
-                                    src="./home/bajaj corporate website images/DISCOVER OUR RANGE/Our-Range_Air-Cooler_Banner_-308-x-238-Pxl.webp"
+                                    src="./home/bajaj corporate website images/DISCOVER OUR RANGE/Our Range_Banners-03-03.jpg"
                                     alt="Morphy Richards"
                                     className="w-full md:w-auto h-full object-cover rounded-2xl"
                                 />
@@ -154,7 +154,7 @@ const OurRange = () => {
                                 initial="hidden"
                                 whileInView="visible"
                                 viewport={{ once: true }}
-                                src="./home/bajaj corporate website images/DISCOVER OUR RANGE/MG_Banners-02.webp"
+                                src="./home/bajaj corporate website images/DISCOVER OUR RANGE/Our Range_Banners-02.jpg"
                                 alt="Morphy Richards"
                                 className="w-full h-full object-cover rounded-2xl md:mt-0 mt-4"
                             />
@@ -172,7 +172,7 @@ const OurRange = () => {
                                     initial="hidden"
                                     whileInView="visible"
                                     viewport={{ once: true }}
-                                    src="./home/bajaj corporate website images/DISCOVER OUR RANGE/WH_516x196.webp"
+                                    src="./home/bajaj corporate website images/DISCOVER OUR RANGE/WH_516x196_New.jpg"
                                     alt="Nirlep"
                                     className="md:w-fit h-full w-full object-cover rounded-2xl"
                                 />
