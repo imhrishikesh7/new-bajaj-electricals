@@ -56,15 +56,18 @@ const Navbar = () => {
           <a href="/" className="md:w-[8vw] w-28 font-bold text-gray-800"><img className="" src="./global-assets/bel-logo.svg" alt="" /></a>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex gap-4 text-gray-800 text-base max-1300px:text-[14px] font-medium">
-            {["Our Brands","Consumer Care", "Corporate" ].map((menu, index) => (
+          <ul className="hidden md:flex gap-4 text-gray-800 text-base max-1300px:text-[16px] font-medium">
+            {["Corporate", "Categories", "Our Brands", "Consumer Care", "Professional Lighting"].map((menu, index) => (
               <li
                 key={menu}
                 className={`relative group ${activeMenuItem === menu ? "" : ""}`}
                 onClick={() => {
                   if (menu === "Corporate") {
                     window.open("https://www.bajajelectricals.com/", "_blank");// Replace with your specific link
-                  } else {
+                  } if (menu === "Professional Lighting") {
+                    window.open("https://illumination.bajajelectricals.com/", "_blank");// Replace with your specific link
+                  }
+                  else {
                     handleMenuClick(menu);
                   }
                 }}
@@ -72,7 +75,7 @@ const Navbar = () => {
                 onMouseLeave={handleMouseLeave}
               >
                 <span
-                  className={`cursor-pointer font-semibold px-4 py-2 rounded-md transition ${activeMenuItem === menu ? "" : "hover:bg-blue-100"
+                  className={`cursor-pointer font-semibold px-2 py-2 rounded-md transition ${activeMenuItem === menu ? "" : "hover:bg-blue-100"
                     }`}
                 >
                   {menu}
@@ -100,7 +103,7 @@ const Navbar = () => {
                     </motion.ul>
                   </AnimatePresence>
                 )}
-                  {menu === "Consumer Care" && activeDropdown === "Consumer Care" && (
+                {menu === "Consumer Care" && activeDropdown === "Consumer Care" && (
                   <AnimatePresence>
                     <motion.ul
                       initial={{ opacity: 0, y: -10 }}
@@ -120,11 +123,21 @@ const Navbar = () => {
           </ul>
 
 
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <a target="_blank" href="https://www.amazon.in/stores/BajajElectricals/BajajElectricals/page/0F14D851-B8A4-470B-A842-BD3BDE30E4E7" className="bg-blue-500 text-white  px-4 py-2 max-1300px:text-[12px] rounded-full hover:bg-blue-600 transition">
               Shop Now
             </a>
+          </div> */}
+          <div className="button-container">
+            <button className="button-cu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-shopping-cart"><circle cx="8" cy="21" r="1" /><circle cx="19" cy="21" r="1" /><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12" /></svg>
+            </button>
+
+            <button className="button-cu">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-user-round"><circle cx="12" cy="8" r="5" /><path d="M20 21a8 8 0 0 0-16 0" /></svg>
+            </button>
           </div>
+
 
           {/* Mobile Hamburger Icon */}
           <div
@@ -166,8 +179,8 @@ const Navbar = () => {
                   Close
                 </div>
                 <ul className="flex flex-col gap-4 text-gray-800 font-medium">
-                  <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Home</li>
                   <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Corporate</li>
+                  <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Categories</li>
                   <li>
                     <div
                       className="cursor-pointer flex justify-between items-center"
@@ -213,24 +226,23 @@ const Navbar = () => {
                           exit={{ height: 0, opacity: 0 }}
                           className="ml-4 mt-2 flex flex-col gap-2 border-l-2 border-[#035dac] pl-2 text-gray-600"
                         >
-                          <li className="cursor-pointer">Bajaj Appliances</li>
-                          <li className="cursor-pointer">Bajaj Lighting</li>
-                          <li className="cursor-pointer">Nex</li>
-                          <li className="cursor-pointer">Morphy Richards</li>
-                          <li className="cursor-pointer">Nirlep</li>
-                          <li className="cursor-pointer">
-                            Professional Lighting
-                          </li>
+                          <li className="cursor-pointer"><a target='_blank' href="https://shop.bajajelectricals.com/pages/service-request-form">Service Request Form</a></li>
+                          <li className="cursor-pointer"><a target='_blank' href="https://www.bajajelectricals.com/service-and-support/">Service and Support</a></li>
+                          <li className="cursor-pointer"><a target='_blank' href="https://shop.bajajelectricals.com/pages/register-your-product">Register Your Product</a></li>
+                          <li className="cursor-pointer"><a target='_blank' href="https://www.bajajelectricals.com/fix-it-yourself/">Fix It Yourself</a></li>
+                          
                         </motion.ul>
                       )}
                     </AnimatePresence>
                   </li>
+                  <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Professional Lighting</li>
+
                   {/* <li className="cursor-pointer border-l-2 border-[#035dac] pl-2">Store Locator</li> */}
-                  <li>
+                  {/* <li>
                     <button className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
                       Shop Now
                     </button>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </motion.div>

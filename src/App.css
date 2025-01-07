@@ -287,3 +287,45 @@
   /* ************************************ */
   /* Read More BTN CSS END */
   /* ************************************ */
+  /* ************************************ */
+  /* USE and Cart BTN CSS Start */
+  /* ************************************ */
+  /* From Uiverse.io by faxriddin20 */ 
+.button-container {
+  display: flex;
+  /* border: 2px solid black; */
+  width: 100px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 100px;
+}
+
+.button-cu {
+  background: linear-gradient(to right, #3b82f6, #1e3a8a);
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button-cu:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}
+  /* ************************************ */
+  /* USE and Cart BTN CSS End */
+  /* ************************************ */
+
+  
