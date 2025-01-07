@@ -92,14 +92,14 @@ const Navbar = () => {
                       initial={{ opacity: 0, y: -10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -10 }}
-                      className="absolute left-0 top-full w-[250px] bg-white shadow-lg mt-2 py-2 rounded-md z-10"
+                      className="absolute left-0 top-full w-[540px] justify-center flex bg-[#e2e6ff] flex-wrap bg-white shadow-lg mt-2 py-2 rounded-md z-10"
                     >
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://shop.bajajelectricals.com/">Bajaj Appliances</a></li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://www.bajajelectricals.com/home-essentials-appliances/lighting/">Bajaj Lighting</a></li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://nexlife.in/">Nex</a></li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://morphyrichardsindia.com/">Morphy Richards</a></li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://www.nirlep.com/">Nirlep</a></li>
-                      <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer"><a target='_blank' href="https://illumination.bajajelectricals.com/">Professional Lighting</a></li>
+                      <li className="px-4 py-2 hover:scale-105 cursor-pointer duration-300 hover:bg-transparent"><a target='_blank' href="https://shop.bajajelectricals.com/"><img src="./home/l1.png" alt="" /></a></li>
+                      <li className="px-4 py-2 hover:scale-105 cursor-pointer duration-300 hover:bg-transparent"><a target='_blank' href="https://www.nirlep.com/"><img src="./home/l3.png" alt="" /></a></li>
+                      <li className="px-4 py-2 hover:scale-105 cursor-pointer duration-300 hover:bg-transparent"><a target='_blank' href="https://www.bajajelectricals.com/home-essentials-appliances/lighting/"><img src="./home/l5.png" alt="" /></a></li>
+                      <li className="px-4 py-2 hover:scale-105 cursor-pointer duration-300 hover:bg-transparent"><a target='_blank' href="https://morphyrichardsindia.com/"><img src="./home/l2.png" alt="" /></a></li>
+                      <li className="px-4 py-2 hover:scale-105 cursor-pointer duration-300 hover:bg-transparent"><a target='_blank' href="https://nexlife.in/"><img src="./home/l4.png" alt="" /></a></li>
+                      <li className="px-4 py-2 hover:scale-105 cursor-pointer duration-300 hover:bg-transparent"><a target='_blank' href="https://illumination.bajajelectricals.com"><img src="./home/l6.png" alt="" /></a></li>
                     </motion.ul>
                   </AnimatePresence>
                 )}
